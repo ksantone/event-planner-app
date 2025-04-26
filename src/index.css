@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.rct-sidebar {
+  background-color: #f9fafb;
+}
+
+.rct-item {
+  transition: transform 0.2s ease;
+}
+
+.rct-item:hover {
+  transform: scale(1.02);
+}
+
+.rct-calendar-header {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.rct-dateHeader {
+  background-color: #f3f4f6;
+}
+
+.rct-header-root {
+  background-color: transparent !important;
+}
+
+.rct-scroll {
+  overflow-x: hidden !important;
+  width: 100% !important; /* force-fit to container */
+}
+
+.today-line {
+  background-color: red !important;
+  width: 2px !important;
+  height: 100% !important;
+  z-index: 9999 !important;
+  pointer-events: none;
+  position: absolute;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background-color: #fff;
+}
+
+.timeline-inner {
+  width: 90%;
+  max-width: 1200px;
+  border: 2px solid #d1d5db; /* Tailwind: border-gray-300 */
+  border-radius: 8px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  width: 1000px; /* fixed width */
+  overflow-x: hidden; /* prevents scroll drift */
+}
+
