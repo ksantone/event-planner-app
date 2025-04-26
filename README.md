@@ -41,3 +41,8 @@ python seed.py
 
 # Start backend server
 flask run
+
+# Start the frontend (in the root directory, where package.json is)
+npm install
+npm start
+```
