@@ -14,9 +14,12 @@ A full-stack event planner application built with React (frontend) and Flask (ba
 - **Create** a new event with title, type (dropdown), start and end date/time.
 - **Edit** an existing event's details or **delete** it.
 
-## Live Demo (Optional)
+---
 
-> Coming soon if deployed via Render or another platform!
+## Live Deployment
+
+- **Frontend** (React App): [Visit the Live Website](https://exquisite-clafoutis-6e6957.netlify.app/)
+- **Backend API** (Flask API): [View API Endpoints](https://event-planner-app-b1q0.onrender.com/events)
 
 ---
 
@@ -41,6 +44,9 @@ python seed.py
 
 # Start backend server
 flask run
+```
+
+# Frontend 
 
 # Start the frontend (in the root directory, where package.json is)
 npm install

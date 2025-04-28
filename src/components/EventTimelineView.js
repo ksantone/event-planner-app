@@ -12,7 +12,7 @@ function EventTimelineView() {
 
   // Set up event data when page is entered
   useEffect(() => {
-    axios.get('http://localhost:5000/events')
+    axios.get('https://event-planner-app-b1q0.onrender.com/events')
       .then(res => setEvents(res.data))
       .catch(err => console.error(err));
   }, []);

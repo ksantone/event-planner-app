@@ -8,7 +8,7 @@ function EventListView() {
     const [events, setEvents] = useState([]);
   
     useEffect(() => {
-        axios.get('http://localhost:5000/events')
+        axios.get('https://event-planner-app-b1q0.onrender.com/events')
             .then(res => setEvents(res.data))
             .catch(err => console.error('Failed to fetch events:', err));
     }, []);
